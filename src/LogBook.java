@@ -62,6 +62,17 @@ public class LogBook
 		return logBookYear;
 	}
 	
+	
+	/*
+	* This method returns the number of days in the logbook month.
+	* */
+	int daysInMonth()
+	{
+		int days = 0;
+		
+		return days;
+	}
+	
 	public static void main(String[] args)
 	{
 	
