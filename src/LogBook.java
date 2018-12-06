@@ -25,6 +25,21 @@ public class LogBook
 		//	in the logbook month
 	}
 	
+	
+	/*
+	* This method returns the logbook entry for the specified 'day' or '-1' if there
+	* is no such day.
+	* */
+	int getEntry(int day)
+	{
+		//	pre-condition	:	 day is less than or equal to the number of days
+		//	in the logbook month
+		
+		int entry = -1;
+		
+		return entry;
+	}
+	
 	public static void main(String[] args)
 	{
 	
