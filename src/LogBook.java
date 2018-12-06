@@ -1,3 +1,5 @@
+import java.util.GregorianCalendar;
+
 /*
 * Filename	:	LogBook.java
 * Author	:	Divyansh Bhardwaj
@@ -7,11 +9,19 @@ public class LogBook
 {
 	
 	/*
+	* Data Members
+	* */
+	private int logMonth = 0, logYear = 0;	//	logBook month and year
+	private int[] entries = new int[31];	//	array of the logbook entries
+	private GregorianCalendar logCalendar;	//	Java's built-in Calendar class
+	
+	
+	/*
 	* This constructor creates an empty LogBook for the specified month
 	* i.e., a logbook in which all the entries are zero.
 	* If month is an invalid date, it will default to today's date.
 	* */
-	public LogBook(int month, int year)
+	LogBook(int month, int year)
 	{
 		//	pre-condition	:	the month must be a valid integer [1, 12] (both inclusive)
 	}
