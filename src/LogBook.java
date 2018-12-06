@@ -83,6 +83,18 @@ public class LogBook
 		return days;
 	}
 	
+	/*
+	* This methods returns true if the 'year' is a leap year.
+	* */
+	private boolean leapYear(int year)
+	{
+		boolean isLeapYear = false;
+		
+		isLeapYear = logCalendar.isLeapYear(year);
+		
+		return isLeapYear;
+	}
+	
 	public static void main(String[] args)
 	{
 	
