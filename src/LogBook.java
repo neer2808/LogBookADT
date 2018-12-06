@@ -56,10 +56,7 @@ public class LogBook
 	* */
 	public int month()
 	{
-		int logbookMonth = 0;
-		
-		
-		return logbookMonth;
+		return logMonth;
 	}
 	
 	/*
@@ -67,9 +64,7 @@ public class LogBook
 	* */
 	public int year()
 	{
-		int logBookYear = 0;
-		
-		return logBookYear;
+		return logYear;
 	}
 	
 	
