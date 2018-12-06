@@ -21,7 +21,7 @@ public class LogBook
 	* i.e., a logbook in which all the entries are zero.
 	* If month is an invalid date, it will default to today's date.
 	* */
-	LogBook(int month, int year)
+	public LogBook(int month, int year)
 	{
 		//	pre-condition	:	the month must be a valid integer [1, 12] (both inclusive)
 	}
@@ -29,7 +29,7 @@ public class LogBook
 	/*
 	* This method stores the 'value' as the logbook entry for the specified 'day'.
 	* */
-	void putEntry(int day, int value)
+	public void putEntry(int day, int value)
 	{
 		//	pre-condition	:	 day is less than or equal to the number of days
 		//	in the logbook month
@@ -40,7 +40,7 @@ public class LogBook
 	* This method returns the logbook entry for the specified 'day' or '-1' if there
 	* is no such day.
 	* */
-	int getEntry(int day)
+	public int getEntry(int day)
 	{
 		//	pre-condition	:	 day is less than or equal to the number of days
 		//	in the logbook month
@@ -54,7 +54,7 @@ public class LogBook
 	/*
 	* This method returns the logbook month.
 	* */
-	int month()
+	public int month()
 	{
 		int logbookMonth = 0;
 		
@@ -65,7 +65,7 @@ public class LogBook
 	/*
 	* This method returns the logbook year.
 	* */
-	int year()
+	public int year()
 	{
 		int logBookYear = 0;
 		
@@ -76,7 +76,7 @@ public class LogBook
 	/*
 	* This method returns the number of days in the logbook month.
 	* */
-	int daysInMonth()
+	public int daysInMonth()
 	{
 		int days = 0;
 		
