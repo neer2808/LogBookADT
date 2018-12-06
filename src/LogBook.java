@@ -40,6 +40,18 @@ public class LogBook
 		return entry;
 	}
 	
+	
+	/*
+	* This method returns the logbook month.
+	* */
+	int month()
+	{
+		int logbookMonth = 0;
+		
+		
+		return logbookMonth;
+	}
+	
 	public static void main(String[] args)
 	{
 	
