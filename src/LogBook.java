@@ -52,6 +52,16 @@ public class LogBook
 		return logbookMonth;
 	}
 	
+	/*
+	* This method returns the logbook year.
+	* */
+	int year()
+	{
+		int logBookYear = 0;
+		
+		return logBookYear;
+	}
+	
 	public static void main(String[] args)
 	{
 	
