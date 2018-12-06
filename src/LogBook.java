@@ -5,4 +5,14 @@
 * */
 public class LogBook
 {
+	
+	public LogBook(int month, int year)
+	{
+	
+	}
+	
+	public static void main(String[] args)
+	{
+	
+	}
 }
