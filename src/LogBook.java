@@ -60,6 +60,10 @@ public class LogBook
 	{
 		//	pre-condition	:	 day is less than or equal to the number of days
 		//	in the logbook month
+		if ( day >= FIRST_DAY_OF_THE_MONTH && day <= LAST_DAY_OF_THE_MONTH )
+		{
+			entries[day] = value;
+		}
 	}
 	
 	
