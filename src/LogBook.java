@@ -1,3 +1,4 @@
+import java.util.Calendar;
 import java.util.GregorianCalendar;
 
 /*
@@ -30,7 +31,8 @@ public class LogBook
 		if ( month >= MONTH_JAN && month <= MONTH_DEC )
 		//	the value for month is valid
 		{
-			//logCalendar = new GregorianCalendar(GregorianCalendar.)
+			logCalendar = new GregorianCalendar(Calendar.YEAR, Calendar.MONTH,
+					Calendar.DAY_OF_MONTH);
 		}
 		else	//	the date is invalid
 		{
