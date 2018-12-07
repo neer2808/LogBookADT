@@ -111,6 +111,26 @@ public class LogBook
 	public int daysInMonth()
 	{
 		int days = 0;
+		boolean isLeapYear = leapYear(logYear);
+		
+		switch (logMonth - 1)	//	to correct the off-by-one error
+		{
+			case GregorianCalendar.JANUARY	:	days = 31;
+												break;
+			case GregorianCalendar.FEBRUARY	:	days = (isLeapYear) ? 29 : 28 ;
+												break;
+			case GregorianCalendar.MARCH	:	days = 31;	break;
+			case GregorianCalendar.APRIL	:	days = 30;	break;
+			case GregorianCalendar.MAY		:	days = 31;	break;
+			case GregorianCalendar.JUNE		:	days = 30;	break;
+			case GregorianCalendar.JULY		:	days = 31;	break;
+			case GregorianCalendar.AUGUST	:	days = 31;	break;
+			case GregorianCalendar.SEPTEMBER:	days = 30;	break;
+			case GregorianCalendar.OCTOBER	:	days = 31;	break;
+			case GregorianCalendar.NOVEMBER	:	days = 30;	break;
+			case GregorianCalendar.DECEMBER	:	days = 31;	break;
+			
+		}
 		
 		return days;
 	}
@@ -120,18 +140,11 @@ public class LogBook
 	* */
 	private boolean leapYear(int year)
 	{
-		boolean isLeapYear = false;
-		
-		isLeapYear = logCalendar.isLeapYear(year);
-		
-		return isLeapYear;
+		return logCalendar.isLeapYear(logYear);
 	}
 	
 	public static void main(String[] args)
 	{
 		LogBook logBook = new LogBook(1, 2018);
-		logBook.putEntry(22, 1000);
-		int rupees = logBook.getEntry(22);
-		System.out.println("This " + rupees);
 	}
 }
