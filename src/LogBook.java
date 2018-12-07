@@ -31,14 +31,14 @@ public class LogBook
 		if ( month >= MONTH_JAN && month <= MONTH_DEC )
 		//	the value for month is valid
 		{
-			logCalendar = new GregorianCalendar(Calendar.YEAR, Calendar.MONTH,
-					Calendar.DAY_OF_MONTH);
-		}
-		else	//	the date is invalid
-		{
 			logCalendar = new GregorianCalendar(year, month - 1, 1);
 			logMonth = month;
 			logYear = year;
+		}
+		else	//	the date is invalid
+		{
+			logCalendar = new GregorianCalendar(Calendar.YEAR, Calendar.MONTH,
+					Calendar.DAY_OF_MONTH);
 		}
 		
 		for (int i = 0; i < entries.length; i++)
