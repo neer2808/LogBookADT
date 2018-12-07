@@ -14,7 +14,7 @@ public class LogBook
 	private int logMonth = 0, logYear = 0;	//	logBook month and year
 	private int[] entries = new int[31];	//	array of the logbook entries
 	private GregorianCalendar logCalendar;	//	Java's built-in Calendar class
-	
+	private int MONTH_JAN = 0, MONTH_DEC = 11;
 	
 	/*
 	* This constructor creates an empty LogBook for the specified month
@@ -23,7 +23,29 @@ public class LogBook
 	* */
 	public LogBook(int month, int year)
 	{
-		//	pre-condition	:	the month must be a valid integer [1, 12] (both inclusive)
+		//	pre-condition	:	the month must be a valid integer [1, 12]
+		//	(both inclusive)
+		
+		/*if ( month >= MONTH_JAN && month <= MONTH_DEC )
+		//	the value for month is valid
+		{
+			for (int i = 0; i < entries.length; i++)
+			{
+				putEntry(i, 0);
+				//	initialize all entries as 0 for this month
+			}
+		}
+		else	//	the date is invalid
+		{
+			logCalendar = new GregorianCalendar(year,
+					(month > MONTH_JAN && month <= MONTH_DEC)
+							? (month - 1)  : (month),
+					1);
+			logMonth = month;
+			logYear = year;
+		}*/
+		
+		
 	}
 	
 	/*
