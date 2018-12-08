@@ -145,6 +145,30 @@ public class LogBook
 	
 	public static void main(String[] args)
 	{
-		LogBook logBook = new LogBook(1, 2018);
+		/*
+		* Test Cases for Days in Month [Test Plan for Test 1]
+		* */
+		LogBook logBook1 = new LogBook(1, 2019);	//	simple month
+		System.out.println(logBook1.daysInMonth());	//	expected value: 31
+		
+		LogBook logBook2 = new LogBook(7, 1998);
+		System.out.println(logBook2.daysInMonth());
+		
+		LogBook logBook3 = new LogBook(12, 2008);
+		System.out.println(logBook3.daysInMonth());
+		
+		//	Test stub for current month to be written later
+		/*LogBook logBook4 = new LogBook();
+		System.out.println(logBook4.daysInMonth());*/
+		
+		LogBook logBook5 = new LogBook(2, 1999);
+		System.out.println(logBook5.daysInMonth());
+		
+		LogBook logBook6 = new LogBook(2, 2000);
+		System.out.println(logBook6.daysInMonth());
+		
+		LogBook logBook7 = new LogBook(13, 2002);
+		System.out.println(logBook7.daysInMonth());
+		
 	}
 }

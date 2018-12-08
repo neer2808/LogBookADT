@@ -2,10 +2,10 @@
 
 * Project Name : LogBook ADT
 * Project Contributors
-    * Dr. Anand Gupta
+    * [Dr. Anand Gupta](https://github.com/anandmcts1)  
     * Mr. Neeraj
-    * Mr. Vaibhav Diwan
-    * Mr. Divyansh  
+    * [Mr. Vaibhav Diwan](https://github.com/divaibhav)  
+    * [Mr. Divyansh](https://github.com/dbc2201)    
     
 * About the project
 > A monthly logbook consists of a set of
