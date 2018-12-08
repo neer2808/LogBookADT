@@ -3,7 +3,7 @@ import java.util.GregorianCalendar;
 
 /*
 * Filename	:	LogBook.java
-* Author	:	Divyansh Bhardwaj
+* Author	:	Divyansh Bhardwaj, Neeraj
 * Aim		:	To create a log book using Data Structures with Java
 * */
 public class LogBook
